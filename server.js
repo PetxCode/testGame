@@ -26,7 +26,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/", async (req, res) => {
-  res.send("Hello");
+  res.send("Your quest for this API is ready!");
 });
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
